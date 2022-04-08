@@ -5,24 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <style>
+        .banner{
+            position: relative;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .alignment{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-light">
+    <!--
+        
+    -->
+    <nav class="navbar navbar-expand-sm bg-">
         <div class="container-fluid">
           <div class="navbar-header">
             <ul class="navbar-nav">
-                <li class="navbar-brand"><a href="#">My Blog</a></li>        
-                <li class="navbar-brand"><a href="#">Home</a></li>
-                <li class="navbar-brand"><a href="#">Dropdown</a></li>
-                <li class="navbar-brand"><a href="#">Page 2</a></li>
-              </ul>
+                <button type="button" class="btn btn-default btn-lg">My Blog</button>
+                <button type="button" class="btn btn-default btn-lg">Home</button>
+                <button type="button" class="btn btn-default btn-lg">Link</button>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-bs-toggle="dropdown">
+                      Dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link 1</a></li>
+                      <li><a class="dropdown-item" href="#">Link 2</a></li>
+                      <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                  </div>
+        
+                <button type="button" class="btn btn-default btn-lg disabled">Disabled</button>        
+                </ul>
+                </div>
+                
           </div>
           
-          <form class="navbar-form navbar-left" action="www.google.com/search?">
+          <form class="navbar-form navbar-left" action="https://www.google.com/search?q=">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search" name="search">
               <div class="input-group-btn">
@@ -34,7 +68,28 @@
           </form>
         </div>
     </nav>
+
+    <div class="banner">
+
+        <div class="alignment">
+            <h1 >
+                Hello World!
+            </h1>
+            <P>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptates beatae quibusdam delectus illum optio hic consectetur repellat. Vero minus architecto modi repudiandae! Doloremque nostrum, aut perspiciatis ea vero repudiandae.
+            </P>
+            <br>
+            <a href="#" class="btn btn-primary">Subscribe for Latest Updates</a>
+        
+        </div>
+
+        
     
+        <img class="image-fluid" src="banner.jpg" alt="" > 
+       
+
+    </div>
+
     
         
     <div class="container mt-5">
@@ -88,7 +143,7 @@
         </div>
 
         <br>
-        
+
         <div class="row">
 
             <div class="col-sm-3">
